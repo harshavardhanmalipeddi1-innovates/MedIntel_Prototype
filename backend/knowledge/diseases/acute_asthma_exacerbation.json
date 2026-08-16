@@ -1,0 +1,74 @@
+{
+  "disease_id": "acute_asthma_exacerbation",
+  "name": "Acute Asthma Exacerbation",
+  "aliases": [
+    "Bronchospasm / acute asthma exacerbation",
+    "Acute bronchospasm",
+    "Asthma attack",
+    "Asthma exacerbation"
+  ],
+  "description": "An acute or subacute worsening of asthma symptoms and airflow limitation, commonly presenting with increasing wheeze, shortness of breath, cough and chest tightness. Severe attacks may progress rapidly and require urgent assessment.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Shortness of breath",
+    "Wheezing",
+    "Chest tightness",
+    "Cough",
+    "Reduced exercise tolerance"
+  ],
+  "associated_symptoms": [
+    "Night-time respiratory symptoms",
+    "Difficulty speaking during severe attacks",
+    "Anxiety related to breathlessness"
+  ],
+  "risk_factors": [
+    "Known asthma",
+    "Previous severe asthma exacerbation",
+    "Respiratory viral infection",
+    "Allergen exposure",
+    "Tobacco smoke or air pollution exposure",
+    "Poor adherence to prescribed asthma controller therapy"
+  ],
+  "physical_examination": [
+    "Wheezing",
+    "Tachypnea",
+    "Tachycardia",
+    "Accessory muscle use",
+    "Reduced oxygen saturation",
+    "Reduced air entry in severe airflow obstruction"
+  ],
+  "recommended_investigations": [
+    "Pulse oximetry",
+    "Peak expiratory flow or spirometric assessment when clinically feasible",
+    "Clinical assessment of respiratory rate, heart rate and work of breathing",
+    "Arterial blood gas testing when severe respiratory compromise is suspected",
+    "Chest imaging when an alternative diagnosis or complication is suspected"
+  ],
+  "red_flags": [
+    "Severe respiratory distress",
+    "Inability to speak normally because of breathlessness",
+    "Markedly reduced air entry or a silent chest",
+    "Hypoxemia",
+    "Exhaustion, confusion or altered consciousness"
+  ],
+  "contraindications": [
+    "Severe or rapidly worsening asthma symptoms require urgent clinical assessment and should not be managed solely by automated decision support."
+  ],
+  "differential_diagnoses": [
+    "COPD exacerbation",
+    "Pneumonia",
+    "Pulmonary embolism",
+    "Spontaneous pneumothorax",
+    "Upper airway obstruction"
+  ],
+  "icd10_codes": [],
+  "clinical_references": [
+    {
+      "title": "2026 Summary Guide for Asthma Management and Prevention",
+      "organization": "Global Initiative for Asthma",
+      "year": "2026",
+      "url": "https://ginasthma.org/2026-gina-summary-guide/"
+    }
+  ],
+  "knowledge_version": "1.0"
+}

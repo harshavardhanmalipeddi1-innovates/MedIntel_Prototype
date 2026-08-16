@@ -1,0 +1,114 @@
+﻿{
+    "validation_run_id":  "track-a-20260810-151708",
+    "phase":  "7.5",
+    "track":  "A - retrospective technical validation",
+    "system_scope":  "MedIntel respiratory clinical decision-support research prototype",
+    "dataset_scope":  "synthetic DDXPlus retrospective respiratory validation",
+    "clinical_validation_status":  "NOT_CLINICALLY_VALIDATED",
+    "overall_status":  "PARTIALLY_COMPLETE_WITH_INCOMPLETE_LIVE_SAFETY_COHORT",
+    "source_artifacts":  {
+                             "phase7_5a":  {
+                                               "file":  "outputs/primary_ranking_metrics.json",
+                                               "sha256":  "A4C1C757244A5F4A00F6D881F36743297FAE0920560DEF33DE2E5BF375268C91",
+                                               "size_bytes":  1168
+                                           },
+                             "phase7_5b":  {
+                                               "file":  "outputs/robustness_summary.json",
+                                               "sha256":  "620A4B86EFC2D4169A90345AB7D5DE73CC349A73E7069E82FD3C2894A21509F3",
+                                               "size_bytes":  2140
+                                           },
+                             "phase7_5c":  {
+                                               "file":  "outputs/differential_ranking_metrics.json",
+                                               "sha256":  "885EEBDDD04D2905D521A24A266ADD5795A490F2B7A986E8486847BD728F2AE1",
+                                               "size_bytes":  1497
+                                           },
+                             "phase7_5d":  {
+                                               "file":  "outputs/critical_condition_summary.json",
+                                               "sha256":  "035861FE6CDAA792095DB8585D3E47B1B0775ED016C32AA15838F8BBAB03BE20",
+                                               "size_bytes":  1297
+                                           },
+                             "phase7_5e":  {
+                                               "file":  "outputs/candidate_yield_metrics.json",
+                                               "sha256":  "6CE41B4A97BBC8FB4E3F5B3CB84B663B990B776783C99C4716CE288941E2C81C",
+                                               "size_bytes":  2159
+                                           }
+                         },
+    "phase_7_5a_primary_ranking":  {
+                                       "status":  "PASS",
+                                       "cohort_cases":  46334,
+                                       "respiratory_classes":  13,
+                                       "top1_accuracy":  0.99954676911123586,
+                                       "top3_accuracy":  1,
+                                       "top5_accuracy":  1,
+                                       "macro_top1":  0.99976212514892349,
+                                       "top1_errors":  21
+                                   },
+    "phase_7_5b_robustness":  {
+                                  "status":  "PASS",
+                                  "full_history_top1":  0.9995467691,
+                                  "retention_75_mean_top1":  0.99624465835,
+                                  "retention_50_mean_top1":  0.98733111754,
+                                  "retention_25_mean_top1":  0.93943972029,
+                                  "initial_only_top1":  0.35446971986,
+                                  "initial_only_top3":  0.66981050632,
+                                  "initial_only_top5":  0.8380023309
+                              },
+    "phase_7_5c_differential_analysis":  {
+                                             "status":  "PASS",
+                                             "closed_world_mass_capture_at_5":  0.72273862361907959,
+                                             "closed_world_label_recall_at_5":  0.68933936591650147,
+                                             "ndcg_at_5":  0.80101041677900719,
+                                             "lrap":  0.81455117464065552,
+                                             "top1_agreement":  0.65975309707773988,
+                                             "full_official_ddx_mass_capture_at_5":  0.42193122295182445,
+                                             "full_official_ddx_label_recall_at_5":  0.33310262176273714,
+                                             "supported_scope_mass_ceiling":  0.60029818855219452,
+                                             "supported_scope_label_ceiling":  0.49731852429539031
+                                         },
+    "phase_7_5d_critical_conditions":  {
+                                           "status":  "PASS",
+                                           "critical_conditions":  5,
+                                           "reference_cases":  12604,
+                                           "full_history_top1":  1,
+                                           "full_history_top3":  1,
+                                           "full_history_top5":  1,
+                                           "full_history_failures":  0
+                                       },
+    "phase_7_5e_candidate_yield":  {
+                                       "status":  "PASS",
+                                       "evaluated_cases":  46334,
+                                       "zero_candidates":  0,
+                                       "one_candidate":  46247,
+                                       "two_candidates":  87,
+                                       "at_least_one_candidate_rate":  1,
+                                       "mean_candidate_count":  1.0018776708248802,
+                                       "reference_inclusion_top1":  0.9995467691,
+                                       "reference_inclusion_top3":  0.9999784176,
+                                       "reference_inclusion_top5":  0.9999784176
+                                   },
+    "phase_7_5f_structural_safety":  {
+                                         "status":  "INCOMPLETE_TIME_LIMIT",
+                                         "evaluator":  "Phase 7.5F-v2",
+                                         "evaluator_sha256":  "EAE618A5F78E7489C2A1205F19FF94CA3515DCCEFC973B5ADB0021AEAEC34E75",
+                                         "preexecution_locked_identity":  "151/151 PASS",
+                                         "deterministic_safety_controls":  "10/10 PASS",
+                                         "locked_live_cohort":  151,
+                                         "completed_live_cases":  2,
+                                         "final_a5_gate":  "NOT_ASSESSED",
+                                         "safety_pass_claimed":  false,
+                                         "safety_failure_claimed":  false,
+                                         "partial_results_sha256":  "002B03BFE10584B4B7F5F26D5B0E787F78CCD68EC814D07240A2E04D13A8B4AC",
+                                         "controls_sha256":  "87F06AF1C86C252572753F543FD8DA0A44E611F6AAE953C4C68266C50D0271F8",
+                                         "incomplete_reason":  "Live reasoning evaluation stopped because of available project execution-time constraints; no final A5 safety-gate conclusion assigned."
+                                     },
+    "interpretation_boundary":  {
+                                    "retrospective_technical_validation":  true,
+                                    "clinical_validation":  false,
+                                    "phase7_5f_a5_pass":  false,
+                                    "phase7_5f_a5_failure":  false,
+                                    "autonomous_diagnosis_claim":  false,
+                                    "autonomous_prescription_claim":  false,
+                                    "doctor_final_decision_required":  true
+                                },
+    "permitted_summary":  "Phase 7.5A through Phase 7.5E retrospective technical validation completed successfully. Phase 7.5F verified 151/151 locked case identities and passed all 10 deterministic safety-control scenarios, but the 151-case live MedGemma cohort was terminated after 2 completed cases because of available execution-time constraints. Therefore the final A5 structural-safety gate was not assessed."
+}

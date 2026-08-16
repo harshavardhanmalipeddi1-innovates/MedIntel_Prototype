@@ -1,0 +1,111 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "disease_id": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "body_system": {
+      "type": "string"
+    },
+    "common_symptoms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "associated_symptoms": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "risk_factors": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "physical_examination": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "recommended_investigations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "red_flags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "contraindications": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "differential_diagnoses": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "icd10_codes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "clinical_references": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "organization": {
+            "type": "string"
+          },
+          "year": {
+            "type": "string"
+          },
+          "url": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "title",
+          "organization"
+        ]
+      }
+    },
+    "knowledge_version": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "disease_id",
+    "name",
+    "description",
+    "knowledge_version"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "disease_id": "spontaneous_pneumothorax",
+  "name": "Spontaneous Pneumothorax",
+  "aliases": [
+    "Spontaneous pneumothorax",
+    "Primary spontaneous pneumothorax",
+    "Secondary spontaneous pneumothorax",
+    "Collapsed lung"
+  ],
+  "description": "A spontaneous collection of air in the pleural space causing partial or complete lung collapse. It may occur without known lung disease or secondary to an underlying pulmonary condition.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Sudden chest pain",
+    "Pleuritic chest pain",
+    "Shortness of breath",
+    "Cough"
+  ],
+  "associated_symptoms": [
+    "Anxiety",
+    "Rapid heart rate",
+    "Cyanosis in significant cases"
+  ],
+  "risk_factors": [
+    "Previous spontaneous pneumothorax",
+    "Underlying lung disease such as COPD",
+    "Tobacco or marijuana smoking",
+    "Family history of spontaneous pneumothorax",
+    "Male sex and tall body habitus are associated with primary spontaneous pneumothorax"
+  ],
+  "physical_examination": [
+    "Reduced breath sounds on the affected side",
+    "Hyperresonance to percussion may be present",
+    "Tachypnea",
+    "Tachycardia",
+    "Reduced oxygen saturation in significant disease"
+  ],
+  "recommended_investigations": [
+    "Pulse oximetry",
+    "Chest X-ray",
+    "Thoracic ultrasound when appropriate and expertise is available",
+    "Chest CT in selected cases or when diagnosis remains uncertain"
+  ],
+  "red_flags": [
+    "Severe respiratory distress",
+    "Hypotension or shock",
+    "Marked hypoxemia",
+    "Rapid clinical deterioration",
+    "Features concerning for tension pneumothorax"
+  ],
+  "contraindications": [
+    "Suspected tension pneumothorax is a medical emergency and urgent management should not be delayed for routine diagnostic processing."
+  ],
+  "differential_diagnoses": [
+    "Pulmonary embolism",
+    "Pneumonia",
+    "Acute coronary syndrome",
+    "Asthma exacerbation",
+    "Pleural effusion"
+  ],
+  "icd10_codes": [],
+  "clinical_references": [
+    {
+      "title": "British Thoracic Society Guideline for pleural disease",
+      "organization": "British Thoracic Society",
+      "year": "2023",
+      "url": "https://thorax.bmj.com/content/78/Suppl_3/s1"
+    },
+    {
+      "title": "Pleural Disorders - Pleurisy, Pleural Effusion, and Pneumothorax",
+      "organization": "National Heart, Lung, and Blood Institute",
+      "year": "2022",
+      "url": "https://www.nhlbi.nih.gov/health/pleural-disorders/types"
+    }
+  ],
+  "knowledge_version": "1.0"
+}

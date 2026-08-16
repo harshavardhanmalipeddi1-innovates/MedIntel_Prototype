@@ -1,0 +1,65 @@
+﻿{
+    "phase":  "7.6",
+    "validation_run_id":  "track-a-20260810-151708",
+    "source_phase7_5_freeze":  "863d1391aefbd6936e7026130df05585e5e77989",
+    "reporting_status":  "REPORTING_COMPLETE_WITH_A5_NOT_ASSESSED",
+    "track_a_gate_status":  {
+                                "A1":  "PASS",
+                                "A2":  "PASS",
+                                "A3":  "INCOMPLETE",
+                                "A4":  "PASS",
+                                "A5":  "NOT_ASSESSED",
+                                "A6":  "PASS"
+                            },
+    "external_artifacts":  {
+                               "subgroup_metrics":  {
+                                                        "path":  "outputs/subgroup_metrics.csv",
+                                                        "sha256":  "758D1315F63DBA4CAB0323012D27D6FCEA235A079F776A03E182C626A7E6E051",
+                                                        "row_count":  28,
+                                                        "stored_in_git":  false
+                                                    },
+                               "failure_cases":  {
+                                                     "path":  "outputs/failure_cases.csv",
+                                                     "sha256":  "92997033DF85B2A8B634E68D5F1D2E6F85408183B34D505A7BF6C7077A0C15E7",
+                                                     "unique_case_rows":  21,
+                                                     "primary_ranking_miss_cases":  21,
+                                                     "candidate_truncation_cases":  1,
+                                                     "stored_in_git":  false,
+                                                     "exclusion_reason":  "Case-level validation artifact retained outside source repository."
+                                                 },
+                               "protocol_deviations":  {
+                                                           "path":  "outputs/protocol_deviations.md",
+                                                           "sha256":  "D8D44ED3089209E2FC7F81C531612BD53376778AF7CE2822E88109BAD2B05CCD",
+                                                           "stored_in_git":  false
+                                                       },
+                               "validation_report":  {
+                                                         "external_path":  "validation_report.md",
+                                                         "sha256":  "B3FC24A7F0A4B7495662822B17B0E2B51D5E09C56AEC7C8A57868584A98A951C",
+                                                         "repository_copy":  "docs/validation/phase7/PHASE_7_6_TRACK_A_VALIDATION_REPORT.md",
+                                                         "stored_in_git":  true
+                                                     },
+                               "safety_metrics":  {
+                                                      "path":  "outputs/safety_metrics.json",
+                                                      "exists":  false,
+                                                      "reason":  "Locked 151-case Phase 7.5F live MedGemma cohort stopped after 2 completed cases due to execution-time constraints.",
+                                                      "final_a5_gate":  "NOT_ASSESSED"
+                                                  }
+                           },
+    "subgroup_reporting":  {
+                               "disease":  "REPORTED",
+                               "sex":  "REPORTED",
+                               "evidence_completeness":  "REPORTED",
+                               "age_group":  "NOT_COMPUTED_NO_FROZEN_BANDS"
+                           },
+    "clinical_validation":  false,
+    "autonomous_diagnosis_claim_authorized":  false,
+    "autonomous_prescription_claim_authorized":  false,
+    "doctor_final_decision_required":  true,
+    "model_inference_performed_in_phase7_6":  false,
+    "medgemma_invoked_in_phase7_6":  false,
+    "retraining_performed":  false,
+    "threshold_tuning_performed":  false,
+    "prompt_changed":  false,
+    "knowledge_base_changed":  false,
+    "safety_validator_changed":  false
+}

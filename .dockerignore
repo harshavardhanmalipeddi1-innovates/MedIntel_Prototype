@@ -1,0 +1,50 @@
+﻿# ============================================================
+# MedIntel Docker build exclusions
+# ============================================================
+
+# Git
+.git
+.gitignore
+
+# Local Python environments
+.venv
+venv
+env
+
+# Python caches
+__pycache__
+*.py[cod]
+*.pyo
+*.pyd
+
+# Test/tool caches
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.coverage
+htmlcov
+
+# Local secrets and environment files
+.env
+.env.*
+!.env.example
+
+# IDE / OS files
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+
+# Large local research/development assets not required by backend
+datasets
+notebooks
+
+# Local MedGemma / LLM artifacts must never enter Docker context
+*.gguf
+*.ggml
+*.safetensors
+
+# Temporary/log files
+*.log
+*.tmp
+*.temp

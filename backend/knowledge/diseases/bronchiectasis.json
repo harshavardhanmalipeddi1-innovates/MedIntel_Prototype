@@ -1,0 +1,75 @@
+{
+  "disease_id": "bronchiectasis",
+  "name": "Bronchiectasis",
+  "aliases": [],
+  "description": "A chronic lung condition in which damaged airways become abnormally widened and have impaired mucus clearance, predisposing to persistent sputum production, recurrent infections and repeated exacerbations.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Chronic productive cough",
+    "Daily sputum production",
+    "Shortness of breath",
+    "Wheezing",
+    "Recurrent respiratory infections"
+  ],
+  "associated_symptoms": [
+    "Chest pain",
+    "Fatigue",
+    "Fever or chills during exacerbations",
+    "Hemoptysis",
+    "Digital clubbing in some patients"
+  ],
+  "risk_factors": [
+    "Previous severe or recurrent respiratory infections",
+    "Cystic fibrosis",
+    "Primary ciliary dyskinesia",
+    "Immune deficiency",
+    "COPD or severe asthma",
+    "Certain inflammatory or autoimmune disorders"
+  ],
+  "physical_examination": [
+    "Crackles or abnormal breath sounds",
+    "Wheezing",
+    "Digital clubbing in some patients",
+    "Signs of hypoxemia or respiratory compromise in advanced disease"
+  ],
+  "recommended_investigations": [
+    "Chest CT to confirm bronchiectasis",
+    "Sputum culture including evaluation for clinically relevant bacterial or mycobacterial infection",
+    "Pulmonary function testing",
+    "Blood tests for infection and possible underlying causes",
+    "Further etiologic testing such as cystic fibrosis or immune evaluation when clinically indicated"
+  ],
+  "red_flags": [
+    "Significant or massive hemoptysis",
+    "Severe respiratory distress",
+    "Marked hypoxemia",
+    "Cardiorespiratory failure",
+    "Sepsis or rapidly worsening systemic illness"
+  ],
+  "contraindications": [
+    "Do not rely on a normal or non-diagnostic chest X-ray alone to exclude bronchiectasis; CT is the key confirmatory imaging test."
+  ],
+  "differential_diagnoses": [
+    "COPD",
+    "Asthma",
+    "Pneumonia",
+    "Tuberculosis",
+    "Pulmonary neoplasm"
+  ],
+  "icd10_codes": [],
+  "clinical_references": [
+    {
+      "title": "Bronchiectasis Diagnosis",
+      "organization": "National Heart, Lung, and Blood Institute",
+      "year": "2023",
+      "url": "https://www.nhlbi.nih.gov/health/bronchiectasis/diagnosis"
+    },
+    {
+      "title": "Bronchiectasis (non-cystic fibrosis), acute exacerbation: antimicrobial prescribing",
+      "organization": "NICE",
+      "year": "2018",
+      "url": "https://www.nice.org.uk/guidance/ng117"
+    }
+  ],
+  "knowledge_version": "1.0"
+}

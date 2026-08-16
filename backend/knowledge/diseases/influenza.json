@@ -1,0 +1,76 @@
+{
+  "disease_id": "influenza",
+  "name": "Influenza",
+  "aliases": [
+    "Flu"
+  ],
+  "description": "A contagious acute respiratory illness caused by influenza viruses. Uncomplicated disease often has abrupt onset with fever or chills, myalgia, headache, malaise, cough, sore throat and rhinitis, although fever may be absent.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Fever or chills",
+    "Cough",
+    "Myalgia or body aches",
+    "Headache",
+    "Malaise or fatigue",
+    "Sore throat"
+  ],
+  "associated_symptoms": [
+    "Rhinitis or nasal congestion",
+    "Loss of appetite",
+    "Vomiting or diarrhea, particularly in children"
+  ],
+  "risk_factors": [
+    "Age 65 years or older",
+    "Young children",
+    "Pregnancy",
+    "Chronic pulmonary or cardiovascular disease",
+    "Immunosuppression",
+    "Other conditions associated with increased risk of severe influenza"
+  ],
+  "physical_examination": [
+    "Fever may be present",
+    "Tachycardia",
+    "Upper respiratory tract findings",
+    "Assessment for hypoxemia or lower respiratory tract involvement"
+  ],
+  "recommended_investigations": [
+    "Influenza molecular testing when results would affect clinical management",
+    "Influenza testing for patients hospitalized with suspected influenza",
+    "Multiplex respiratory viral testing when clinically appropriate",
+    "Chest imaging when pneumonia or another lower respiratory complication is suspected"
+  ],
+  "red_flags": [
+    "Respiratory distress or hypoxemia",
+    "Altered mental status",
+    "Severe dehydration",
+    "Signs of pneumonia",
+    "Sepsis or progressive systemic deterioration"
+  ],
+  "contraindications": [
+    "Do not delay clinically indicated antiviral treatment in hospitalized or high-risk patients solely while awaiting influenza test results.",
+    "Antibiotics do not treat uncomplicated viral influenza."
+  ],
+  "differential_diagnoses": [
+    "COVID-19",
+    "Upper respiratory tract infection",
+    "Pneumonia",
+    "Viral pharyngitis",
+    "Acute bronchitis"
+  ],
+  "icd10_codes": [],
+  "clinical_references": [
+    {
+      "title": "Clinical Signs and Symptoms of Influenza",
+      "organization": "Centers for Disease Control and Prevention",
+      "year": "2026",
+      "url": "https://www.cdc.gov/flu/hcp/clinical-signs/index.html"
+    },
+    {
+      "title": "Overview of Influenza Testing Methods",
+      "organization": "Centers for Disease Control and Prevention",
+      "year": "2025",
+      "url": "https://www.cdc.gov/flu/hcp/testing-methods/index.html"
+    }
+  ],
+  "knowledge_version": "1.0"
+}

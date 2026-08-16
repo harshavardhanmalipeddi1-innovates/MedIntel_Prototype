@@ -1,0 +1,74 @@
+{
+  "disease_id": "acute_upper_respiratory_tract_infection",
+  "name": "Acute Upper Respiratory Tract Infection",
+  "aliases": [
+    "URTI",
+    "URI",
+    "Upper respiratory tract infection",
+    "Common cold"
+  ],
+  "description": "An acute infection of the upper respiratory tract, most often viral. The common cold is a frequent form and typically causes nasal congestion or rhinorrhea, cough, sneezing and sore throat, usually resolving without antibiotics.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Runny nose",
+    "Nasal congestion",
+    "Cough",
+    "Sneezing",
+    "Sore throat"
+  ],
+  "associated_symptoms": [
+    "Headache",
+    "Mild body aches",
+    "Low-grade fever",
+    "Postnasal drip"
+  ],
+  "risk_factors": [
+    "Close contact with a person with a respiratory viral infection",
+    "Crowded indoor exposure",
+    "Reduced immunity or chronic illness may increase complication risk"
+  ],
+  "physical_examination": [
+    "Nasal discharge or congestion",
+    "Mild pharyngeal erythema",
+    "Assessment of temperature and respiratory status",
+    "Evaluation for focal lower respiratory findings when symptoms suggest complications"
+  ],
+  "recommended_investigations": [
+    "Clinical assessment for uncomplicated illness",
+    "Influenza or SARS-CoV-2 testing when results may alter management, particularly in higher-risk patients",
+    "Further testing when symptoms are prolonged, severe or suggest another diagnosis"
+  ],
+  "red_flags": [
+    "Trouble breathing or rapid breathing",
+    "Dehydration",
+    "Persistent fever",
+    "Symptoms that improve then significantly worsen",
+    "Worsening of a chronic cardiopulmonary condition"
+  ],
+  "contraindications": [
+    "Routine antibiotics are not appropriate for an uncomplicated viral common cold or nonspecific viral URTI."
+  ],
+  "differential_diagnoses": [
+    "Influenza",
+    "COVID-19",
+    "Viral pharyngitis",
+    "Acute bronchitis",
+    "Pneumonia"
+  ],
+  "icd10_codes": [],
+  "clinical_references": [
+    {
+      "title": "About Common Cold",
+      "organization": "Centers for Disease Control and Prevention",
+      "year": "2026",
+      "url": "https://www.cdc.gov/common-cold/about/index.html"
+    },
+    {
+      "title": "Manage Common Cold",
+      "organization": "Centers for Disease Control and Prevention",
+      "year": "2026",
+      "url": "https://www.cdc.gov/common-cold/treatment/index.html"
+    }
+  ],
+  "knowledge_version": "1.0"
+}

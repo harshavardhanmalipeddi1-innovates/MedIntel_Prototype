@@ -1,0 +1,46 @@
+{
+    "project":  "MedIntel",
+    "phase":  "8",
+    "scope":  "Respiratory clinical decision-support research prototype",
+    "technical_acceptance":  true,
+    "clinical_validation":  false,
+    "production_clinical_readiness":  false,
+    "autonomous_diagnosis":  false,
+    "autonomous_prescription":  false,
+    "final_clinical_decision":  "doctor",
+    "synthetic_research_dataset":  "DDXPlus v6.2",
+    "phase6_freeze":  {
+                          "tag":  "medintel-phase6-prototype-freeze",
+                          "commit":  "388d847bdd7a9f3377c77beb019eac242ffc43c1"
+                      },
+    "phase7_reporting_freeze":  {
+                                    "tag":  "medintel-phase7-track-a-reporting-freeze",
+                                    "commit":  "f39877a250aa1a5c3aeb1b08994b35ef6d120ad3",
+                                    "track_a_7_5f":  "INCOMPLETE",
+                                    "a5":  "NOT_ASSESSED"
+                                },
+    "phase8":  {
+                   "frontend_integration_commit":  "a98ffe5c8c19e6c02481db95277db75fd640e3aa",
+                   "authentication_commit":  "c791b3829bb06b6b8b0d499f828ceccceb553f1e",
+                   "deployment_ci_commit":  "9cd75c9f98e6754613ae8eb5ae3c0c0d7e7e5d82",
+                   "ci_repair_commit":  "f0cf05ac82622d1f48026630870f69f73774860c",
+                   "main_reconciliation_commit":  "948e9a84f134b90ef48f86ffa56d8edcac4f6645",
+                   "phase8_3_targeted_tests":  "56/56 PASS",
+                   "phase8_2_live_workflow_http_status":  200,
+                   "phase8_2_live_workflow_seconds":  471.1,
+                   "final_runtime_health":  "4/4 healthy",
+                   "medgemma_container":  "252f015e3a063c5bb6dfdc1e629330ea31de89498b824ea1c0f166b5561de47f",
+                   "freeze_tag":  "medintel-phase8-readiness-freeze"
+               },
+    "limitations":  [
+                        "Not clinically validated",
+                        "Phase 7 Track-A 7.5F incomplete",
+                        "A5 NOT_ASSESSED",
+                        "Local clinician authentication is not production IAM",
+                        "No autonomous diagnosis",
+                        "No autonomous prescription",
+                        "Doctor retains final clinical decision",
+                        "Technical acceptance is not hospital-production certification",
+                        "Minimal CI does not replace clinical validation or full safety evaluation"
+                    ]
+}

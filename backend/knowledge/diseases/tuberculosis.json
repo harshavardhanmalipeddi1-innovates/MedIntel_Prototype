@@ -1,0 +1,81 @@
+{
+  "disease_id": "tuberculosis",
+  "name": "Tuberculosis",
+  "aliases": [
+    "TB",
+    "Pulmonary tuberculosis",
+    "PTB"
+  ],
+  "description": "A potentially serious infectious disease caused by Mycobacterium tuberculosis that primarily affects the lungs, characterized by persistent cough, chest pain, weight loss, and night sweats.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Persistent cough (> 2 weeks)",
+    "Hemoptysis",
+    "Night sweats",
+    "Unexplained weight loss",
+    "Fever (often low-grade)"
+  ],
+  "associated_symptoms": [
+    "Fatigue",
+    "Loss of appetite",
+    "Chest pain",
+    "Chills"
+  ],
+  "risk_factors": [
+    "Close contact with active TB case",
+    "Immunosuppression (HIV, corticosteroids, TNF inhibitors)",
+    "Malnutrition",
+    "Diabetes mellitus",
+    "Travel to or residence in TB-endemic region",
+    "Substance abuse",
+    "Healthcare workers"
+  ],
+  "physical_examination": [
+    "Cachexia",
+    "Lymphadenopathy",
+    "Post-tussive crackles (apical)",
+    "Decreased breath sounds over affected areas",
+    "Dullness to percussion (pleural effusion)"
+  ],
+  "recommended_investigations": [
+    "Chest X-Ray",
+    "Sputum smear microscopy for acid-fast bacilli (AFB)",
+    "Sputum culture for Mycobacterium tuberculosis",
+    "GeneXpert MTB/RIF (nucleic acid amplification test)",
+    "Tuberculin skin test (TST / Mantoux)",
+    "Interferon-gamma release assay (IGRA)"
+  ],
+  "red_flags": [
+    "Massive hemoptysis",
+    "Severe respiratory distress",
+    "Miliary pattern on CXR (disseminated TB)",
+    "Signs of meningeal involvement (headache, neck stiffness)"
+  ],
+  "contraindications": [],
+  "differential_diagnoses": [
+    "Pneumonia",
+    "Pulmonary neoplasm",
+    "Sarcoidosis",
+    "Fungal infection",
+    "Non-tuberculous mycobacterial infection"
+  ],
+  "icd10_codes": [
+    "A15.0",
+    "A15.9"
+  ],
+  "clinical_references": [
+    {
+      "title": "Clinical and Laboratory Diagnosis for Tuberculosis",
+      "organization": "Centers for Disease Control and Prevention",
+      "year": "2025",
+      "url": "https://www.cdc.gov/tb/hcp/testing-diagnosis/clinical-and-laboratory-diagnosis.html"
+    },
+    {
+      "title": "WHO consolidated guidelines on tuberculosis: module 4: treatment and care",
+      "organization": "World Health Organization",
+      "year": "2025",
+      "url": "https://www.who.int/publications/i/item/9789240107243"
+    }
+  ],
+  "knowledge_version": "1.1"
+}

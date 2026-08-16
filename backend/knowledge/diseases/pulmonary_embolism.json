@@ -1,0 +1,70 @@
+{
+  "disease_id": "pulmonary_embolism",
+  "name": "Pulmonary Embolism",
+  "aliases": [
+    "PE",
+    "Pulmonary thromboembolism"
+  ],
+  "description": "A blockage in one of the pulmonary arteries in the lungs, usually caused by blood clots that travel from the deep veins of the legs or other parts of the body.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Sudden shortness of breath",
+    "Sharp chest pain that may worsen with deep breaths",
+    "Rapid heart rate (tachycardia)",
+    "Cough, sometimes with blood-tinged sputum",
+    "Leg swelling or pain (sign of deep vein thrombosis)"
+  ],
+  "associated_symptoms": [
+    "Syncope or near‑syncope",
+    "Anxiety or sense of impending doom",
+    "Sweating"
+  ],
+  "risk_factors": [
+    "Prolonged immobility (e.g., long flights, bed rest)",
+    "Recent surgery or trauma",
+    "Active cancer or chemotherapy",
+    "Inherited clotting disorders",
+    "Hormone therapy or oral contraceptives",
+    "Obesity",
+    "Pregnancy and postpartum period"
+  ],
+  "physical_examination": [
+    "Tachypnea",
+    "Tachycardia",
+    "Hypoxia (low oxygen saturation)",
+    "Leg swelling or tenderness (sign of DVT)"
+  ],
+  "recommended_investigations": [
+    "CT pulmonary angiography (CTPA)",
+    "Ventilation‑Perfusion (V/Q) scan",
+    "D‑dimer laboratory test",
+    "Compression ultrasound of lower extremities",
+    "ECG (may show sinus tachycardia or right‑heart strain)"
+  ],
+  "red_flags": [
+    "Hemodynamic instability (low blood pressure)",
+    "Severe hypoxemia",
+    "Cardiac arrest",
+    "Massive clot burden on imaging"
+  ],
+  "contraindications": [],
+  "differential_diagnoses": [
+    "Pneumonia",
+    "Acute coronary syndrome",
+    "Aortic dissection",
+    "Pneumothorax",
+    "Asthma exacerbation"
+  ],
+  "icd10_codes": [
+    "I26.99"
+  ],
+  "clinical_references": [
+    {
+      "title": "Venous thromboembolic diseases: diagnosis, management and thrombophilia testing",
+      "organization": "NICE",
+      "year": "2023",
+      "url": "https://www.nice.org.uk/guidance/ng158"
+    }
+  ],
+  "knowledge_version": "1.1"
+}

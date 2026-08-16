@@ -1,0 +1,56 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environments
+.venv/
+venv/
+ENV/
+env/
+
+# Node & Frontend
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.crt
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Data, Model Artifacts & Heavy Files
+datasets/raw/*
+!datasets/raw/.gitkeep
+models/xgboost/artifacts/*
+!models/xgboost/artifacts/.gitkeep
+
+# Logs
+*.log
+.env.*
+!.env.example
+*.pyc
+*.before-scope-fix
+*.before-provenance-cleanup
+*.before-*-fix
+*.gguf
+*.safetensors
+*.bin

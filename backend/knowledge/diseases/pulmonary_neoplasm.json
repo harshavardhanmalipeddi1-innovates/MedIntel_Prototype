@@ -1,0 +1,80 @@
+{
+  "disease_id": "pulmonary_neoplasm",
+  "name": "Pulmonary Neoplasm",
+  "aliases": [
+    "Lung neoplasm",
+    "Suspected lung tumour",
+    "Suspected lung tumor"
+  ],
+  "description": "A neoplastic growth involving lung tissue. Pulmonary neoplasms may be benign or malignant, but persistent or suspicious pulmonary lesions and associated respiratory or systemic symptoms require evaluation to determine pathology and, when malignant, stage.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Persistent or worsening cough",
+    "Shortness of breath",
+    "Chest discomfort or pain",
+    "Hemoptysis",
+    "Unexplained weight loss"
+  ],
+  "associated_symptoms": [
+    "Hoarseness",
+    "Loss of appetite",
+    "Fatigue",
+    "Wheezing",
+    "Difficulty swallowing"
+  ],
+  "risk_factors": [
+    "Current or previous tobacco smoking",
+    "Secondhand smoke exposure",
+    "Radon exposure",
+    "Occupational exposure to carcinogenic substances",
+    "Family history of lung cancer",
+    "Increasing age"
+  ],
+  "physical_examination": [
+    "Examination may be non-specific or normal in early disease",
+    "Assessment for lymphadenopathy",
+    "Assessment for abnormal or reduced breath sounds",
+    "Assessment for weight loss or cachexia",
+    "Assessment for signs of metastatic or locally advanced disease when clinically suspected"
+  ],
+  "recommended_investigations": [
+    "Chest imaging, typically including diagnostic chest CT",
+    "Tissue biopsy when malignancy is suspected",
+    "Bronchoscopy or image-guided sampling depending on lesion location",
+    "Pathologic classification",
+    "Staging evaluation when malignancy is confirmed"
+  ],
+  "red_flags": [
+    "Hemoptysis",
+    "Progressive or severe shortness of breath",
+    "Unexplained significant weight loss",
+    "New neurologic symptoms suggesting metastatic disease",
+    "Facial or neck swelling suggesting major thoracic vascular obstruction"
+  ],
+  "contraindications": [
+    "Do not treat a model label of pulmonary neoplasm as confirmed cancer; definitive diagnosis requires appropriate clinical and pathologic evaluation."
+  ],
+  "differential_diagnoses": [
+    "Pneumonia",
+    "Tuberculosis",
+    "Bronchiectasis",
+    "Pulmonary embolism",
+    "Benign pulmonary nodule"
+  ],
+  "icd10_codes": [],
+  "clinical_references": [
+    {
+      "title": "Non-Small Cell Lung Cancer Treatment (PDQ) - Patient Version",
+      "organization": "National Cancer Institute",
+      "year": null,
+      "url": "https://www.cancer.gov/types/lung/patient/non-small-cell-lung-treatment-pdq"
+    },
+    {
+      "title": "Lung Cancer Prevention",
+      "organization": "National Cancer Institute",
+      "year": null,
+      "url": "https://www.cancer.gov/types/lung/patient/lung-prevention-pdq"
+    }
+  ],
+  "knowledge_version": "1.0"
+}

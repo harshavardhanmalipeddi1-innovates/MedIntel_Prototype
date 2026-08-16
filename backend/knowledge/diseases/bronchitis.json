@@ -1,0 +1,74 @@
+{
+  "disease_id": "acute_bronchitis",
+  "name": "Acute Bronchitis",
+  "aliases": [
+    "Bronchitis",
+    "Chest cold"
+  ],
+  "description": "An acute inflammation of the large airways, usually caused by a respiratory virus, producing cough with or without mucus. Uncomplicated acute bronchitis generally resolves without antibiotic treatment.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Cough with or without mucus",
+    "Chest congestion",
+    "Fatigue",
+    "Sore throat",
+    "Mild body aches"
+  ],
+  "associated_symptoms": [
+    "Runny or blocked nose",
+    "Mild headache",
+    "Transient wheezing"
+  ],
+  "risk_factors": [
+    "Recent viral respiratory infection",
+    "Exposure to respiratory viruses",
+    "Smoking",
+    "Secondhand smoke or inhaled irritants"
+  ],
+  "physical_examination": [
+    "Assessment of temperature, heart rate and respiratory rate",
+    "Chest auscultation",
+    "Assessment for wheeze",
+    "Evaluation for focal findings suggesting pneumonia"
+  ],
+  "recommended_investigations": [
+    "Clinical assessment and vital signs",
+    "Chest X-ray only when pneumonia or another serious diagnosis is suspected",
+    "Pulse oximetry when shortness of breath or respiratory compromise is present",
+    "Influenza or SARS-CoV-2 testing when epidemiologically and clinically indicated"
+  ],
+  "red_flags": [
+    "Shortness of breath or difficulty breathing",
+    "Hemoptysis",
+    "High or persistent fever",
+    "Abnormal vital signs or focal lung findings suggesting pneumonia",
+    "Symptoms lasting more than approximately 3 weeks or recurrent episodes"
+  ],
+  "contraindications": [
+    "Routine antibiotics are not recommended for uncomplicated acute bronchitis.",
+    "Do not use coloured sputum alone as evidence of bacterial infection."
+  ],
+  "differential_diagnoses": [
+    "Pneumonia",
+    "Influenza",
+    "Pertussis",
+    "Acute asthma exacerbation",
+    "COPD exacerbation"
+  ],
+  "icd10_codes": [],
+  "clinical_references": [
+    {
+      "title": "Chest Cold (Acute Bronchitis) Basics",
+      "organization": "Centers for Disease Control and Prevention",
+      "year": "2025",
+      "url": "https://www.cdc.gov/acute-bronchitis/about/index.html"
+    },
+    {
+      "title": "Outpatient Clinical Care for Adults",
+      "organization": "Centers for Disease Control and Prevention",
+      "year": null,
+      "url": "https://www.cdc.gov/antibiotic-use/hcp/clinical-care/adult-outpatient.html"
+    }
+  ],
+  "knowledge_version": "1.0"
+}

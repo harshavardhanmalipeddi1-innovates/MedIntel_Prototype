@@ -1,0 +1,104 @@
+services:
+
+  medgemma:
+    image: ghcr.io/ggml-org/llama.cpp:server@sha256:bedbb0f38ff2c84893d2df350473fd438875d9ec23d23ce98e96df240e77d6ba
+    container_name: medintel-medgemma
+    restart: unless-stopped
+
+    command:
+      - --model
+      - /models/medgemma-1.5-4b-it-q4_0.gguf
+      - --alias
+      - google/medgemma-1.5-4b-it
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8080"
+      - --ctx-size
+      - "8192"
+      - --threads
+      - "4"
+      - --parallel
+      - "1"
+
+    volumes:
+      - type: bind
+        source: ${MEDGEMMA_MODEL_PATH}
+        target: /models/medgemma-1.5-4b-it-q4_0.gguf
+        read_only: true
+
+    expose:
+      - "8080"
+
+  backend:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+
+    ports:
+      - "127.0.0.1:8000:8000"
+
+    env_file:
+      - .env
+
+    environment:
+      AI_REASONING_ENABLED: "true"
+      AI_PROVIDER: "local"
+      LOCAL_MEDGEMMA_MODEL_ID: "google/medgemma-1.5-4b-it"
+      MEDGEMMA_BASE_URL: "http://medgemma:8080"
+      MEDGEMMA_TIMEOUT_SECONDS: "1200"
+      MEDGEMMA_MAX_RETRIES: "0"
+
+
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health', timeout=3).read()"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+    depends_on:
+      db:
+        condition: service_healthy
+      medgemma:
+        condition: service_healthy
+  frontend:
+    restart: unless-stopped
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+
+    ports:
+      - "127.0.0.1:3000:80"
+
+
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1/ || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    depends_on:
+      backend:
+        condition: service_healthy
+  db:
+    restart: unless-stopped
+    image: postgres:15-alpine@sha256:3d0f7584ed7d04e27fa050d6683a74746608faf21f202be78460d679cc56461f
+
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-medintel}
+      POSTGRES_USER: ${POSTGRES_USER:-postgres}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?POSTGRES_PASSWORD must be set in .env}
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+volumes:
+  postgres_data:

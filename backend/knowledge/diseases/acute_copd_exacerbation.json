@@ -1,0 +1,79 @@
+{
+  "disease_id": "acute_copd_exacerbation",
+  "name": "Acute Exacerbation of COPD",
+  "aliases": [
+    "Acute COPD exacerbation / infection",
+    "COPD exacerbation",
+    "AECOPD"
+  ],
+  "description": "An acute, sustained worsening of respiratory symptoms beyond the patient's usual stable COPD state. Common manifestations include increased breathlessness, cough, sputum volume and/or sputum purulence. Exacerbations may be triggered by infections, smoking-related exposure, air pollution or other causes and are not always bacterial.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Worsening shortness of breath",
+    "Increased cough",
+    "Increased sputum production",
+    "Change in sputum colour or purulence",
+    "Wheezing"
+  ],
+  "associated_symptoms": [
+    "Chest tightness",
+    "Fatigue",
+    "Fever or systemic symptoms when infection is present",
+    "Reduced exercise tolerance"
+  ],
+  "risk_factors": [
+    "Established COPD",
+    "Previous COPD exacerbations or hospital admissions",
+    "Current or previous tobacco smoking",
+    "Recent respiratory infection",
+    "Air pollution or respiratory irritant exposure"
+  ],
+  "physical_examination": [
+    "Tachypnea",
+    "Wheezing or reduced air entry",
+    "Use of accessory respiratory muscles",
+    "Hypoxemia",
+    "Tachycardia"
+  ],
+  "recommended_investigations": [
+    "Pulse oximetry",
+    "Chest X-ray when severe disease or an alternative diagnosis is suspected",
+    "Arterial blood gas testing in severe exacerbation or suspected respiratory failure",
+    "Sputum culture when clinically indicated, particularly with purulent sputum or poor response",
+    "ECG when cardiac disease or another cardiopulmonary cause is suspected"
+  ],
+  "red_flags": [
+    "Severe or rapidly worsening breathlessness",
+    "Marked hypoxemia or cyanosis",
+    "Altered mental status",
+    "Hemodynamic instability",
+    "Signs of respiratory failure or sepsis"
+  ],
+  "contraindications": [
+    "Do not assume every COPD exacerbation is bacterial; antibiotic decisions require clinical assessment.",
+    "Avoid uncontrolled oxygen administration in patients at risk of hypercapnic respiratory failure; oxygen should be clinically titrated."
+  ],
+  "differential_diagnoses": [
+    "Pneumonia",
+    "Pulmonary embolism",
+    "Spontaneous pneumothorax",
+    "Acute asthma exacerbation",
+    "Heart failure"
+  ],
+  "icd10_codes": [],
+  "clinical_references": [
+    {
+      "title": "Chronic obstructive pulmonary disease (acute exacerbation): antimicrobial prescribing",
+      "organization": "NICE",
+      "year": "2018",
+      "url": "https://www.nice.org.uk/guidance/ng114/chapter/Recommendations"
+    },
+    {
+      "title": "Chronic obstructive pulmonary disease in over 16s: diagnosis and management",
+      "organization": "NICE",
+      "year": "2018",
+      "url": "https://www.nice.org.uk/guidance/ng115"
+    }
+  ],
+  "knowledge_version": "1.0"
+}

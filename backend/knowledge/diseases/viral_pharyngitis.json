@@ -1,0 +1,73 @@
+{
+  "disease_id": "viral_pharyngitis",
+  "name": "Viral Pharyngitis",
+  "aliases": [
+    "Viral sore throat"
+  ],
+  "description": "Inflammation of the pharynx caused by a viral infection. Viruses are the most common cause of acute sore throat, and associated cough, rhinorrhea, hoarseness or conjunctivitis support a viral cause rather than group A streptococcal pharyngitis.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Sore throat",
+    "Painful swallowing",
+    "Dry or scratchy throat",
+    "Cough",
+    "Runny nose"
+  ],
+  "associated_symptoms": [
+    "Hoarseness",
+    "Conjunctivitis",
+    "Low-grade fever",
+    "Headache"
+  ],
+  "risk_factors": [
+    "Exposure to respiratory viruses",
+    "Close contact with people with upper respiratory infections",
+    "Crowded settings"
+  ],
+  "physical_examination": [
+    "Pharyngeal erythema",
+    "Upper respiratory viral findings may be present",
+    "Assessment for tonsillar findings",
+    "Assessment for cervical lymphadenopathy",
+    "Evaluation for respiratory distress or inability to swallow"
+  ],
+  "recommended_investigations": [
+    "Clinical history and examination when clear viral features are present",
+    "Group A streptococcal testing when bacterial pharyngitis remains clinically possible",
+    "Rapid antigen detection testing or throat culture according to age and clinical context"
+  ],
+  "red_flags": [
+    "Difficulty breathing",
+    "Difficulty swallowing or excessive drooling",
+    "Dehydration",
+    "Blood in saliva or sputum",
+    "Rapidly worsening or persistent symptoms"
+  ],
+  "contraindications": [
+    "Do not treat confirmed or clinically clear viral pharyngitis with antibiotics.",
+    "When group A streptococcal pharyngitis remains possible, use appropriate diagnostic testing rather than assuming a viral cause."
+  ],
+  "differential_diagnoses": [
+    "Group A streptococcal pharyngitis",
+    "Acute laryngitis",
+    "Upper respiratory tract infection",
+    "Influenza",
+    "Infectious mononucleosis"
+  ],
+  "icd10_codes": [],
+  "clinical_references": [
+    {
+      "title": "Sore Throat Basics",
+      "organization": "Centers for Disease Control and Prevention",
+      "year": "2024",
+      "url": "https://www.cdc.gov/sore-throat/about/index.html"
+    },
+    {
+      "title": "Clinical Guidance for Group A Streptococcal Pharyngitis",
+      "organization": "Centers for Disease Control and Prevention",
+      "year": "2025",
+      "url": "https://www.cdc.gov/group-a-strep/hcp/clinical-guidance/strep-throat.html"
+    }
+  ],
+  "knowledge_version": "1.0"
+}

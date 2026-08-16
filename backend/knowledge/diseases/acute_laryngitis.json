@@ -1,0 +1,73 @@
+{
+  "disease_id": "acute_laryngitis",
+  "name": "Acute Laryngitis",
+  "aliases": [
+    "Acute laryngitis",
+    "Laryngitis"
+  ],
+  "description": "Acute inflammation or irritation of the larynx and vocal folds, commonly associated with a viral upper respiratory infection. The characteristic feature is an acute change in voice such as hoarseness or temporary loss of voice.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Hoarse or croaky voice",
+    "Temporary loss of voice",
+    "Sore throat",
+    "Irritating cough",
+    "Frequent throat clearing"
+  ],
+  "associated_symptoms": [
+    "Runny or blocked nose when associated with a viral infection",
+    "Mild fever",
+    "Throat irritation"
+  ],
+  "risk_factors": [
+    "Recent upper respiratory tract infection",
+    "Voice overuse or vocal strain",
+    "Smoking or inhaled irritants",
+    "Allergic or inflammatory irritation",
+    "Laryngopharyngeal reflux"
+  ],
+  "physical_examination": [
+    "Hoarse, weak or strained voice",
+    "Possible pharyngeal irritation",
+    "Assessment for stridor or respiratory distress",
+    "Assessment for cervical or neck abnormalities when symptoms persist"
+  ],
+  "recommended_investigations": [
+    "Clinical history and examination for uncomplicated acute presentations",
+    "Laryngoscopic examination for persistent hoarseness or concerning features",
+    "ENT assessment when symptoms persist or structural disease is suspected"
+  ],
+  "red_flags": [
+    "Difficulty breathing or stridor",
+    "Difficulty swallowing",
+    "Hemoptysis",
+    "Neck mass",
+    "Persistent unexplained hoarseness"
+  ],
+  "contraindications": [
+    "Persistent hoarseness or red-flag symptoms should not be managed as uncomplicated self-limited laryngitis without further evaluation."
+  ],
+  "differential_diagnoses": [
+    "Viral pharyngitis",
+    "Upper respiratory tract infection",
+    "Vocal fold lesion",
+    "Laryngopharyngeal reflux",
+    "Laryngeal or pulmonary neoplasm"
+  ],
+  "icd10_codes": [],
+  "clinical_references": [
+    {
+      "title": "Laryngitis",
+      "organization": "NHS",
+      "year": null,
+      "url": "https://www.nhs.uk/conditions/laryngitis/"
+    },
+    {
+      "title": "Hoarseness",
+      "organization": "National Institute on Deafness and Other Communication Disorders",
+      "year": null,
+      "url": "https://www.nidcd.nih.gov/health/hoarseness"
+    }
+  ],
+  "knowledge_version": "1.0"
+}

@@ -1,0 +1,73 @@
+{
+  "disease_id": "pneumonia",
+  "name": "Pneumonia",
+  "aliases": [],
+  "description": "An infection that inflames the air sacs in one or both lungs, which may fill with fluid or pus, causing cough with phlegm or pus, fever, chills, and difficulty breathing.",
+  "body_system": "Respiratory",
+  "common_symptoms": [
+    "Fever",
+    "Chills",
+    "Productive cough (phlegm or pus)",
+    "Shortness of breath",
+    "Chest pain when breathing or coughing"
+  ],
+  "associated_symptoms": [
+    "Fatigue",
+    "Nausea",
+    "Vomiting",
+    "Diarrhea",
+    "Confusion (especially in older adults)"
+  ],
+  "risk_factors": [
+    "Age > 65 or < 2",
+    "Chronic respiratory disease (e.g., COPD, Asthma)",
+    "Smoking",
+    "Immunosuppression",
+    "Recent viral respiratory infection"
+  ],
+  "physical_examination": [
+    "Tachypnea",
+    "Tachycardia",
+    "Hypoxia",
+    "Fever",
+    "Crackles/rales on auscultation",
+    "Bronchial breath sounds",
+    "Dullness to percussion"
+  ],
+  "recommended_investigations": [
+    "Chest X-Ray (CXR)",
+    "Complete Blood Count (CBC) with differential",
+    "Sputum gram stain and culture",
+    "Blood cultures (if severe)",
+    "C-Reactive Protein (CRP) or Procalcitonin"
+  ],
+  "red_flags": [
+    "Severe hypoxemia (SpO2 < 90%)",
+    "Altered mental status",
+    "Hypotension (Systolic BP < 90 mmHg)",
+    "Respiratory failure",
+    "Multi-lobar involvement on imaging"
+  ],
+  "contraindications": [
+    "Do not delay antibiotic administration for severe pneumonia while awaiting culture results."
+  ],
+  "differential_diagnoses": [
+    "Acute bronchitis",
+    "Pulmonary embolism",
+    "Congestive heart failure",
+    "Tuberculosis",
+    "Asthma exacerbation"
+  ],
+  "icd10_codes": [
+    "J18.9"
+  ],
+  "clinical_references": [
+    {
+      "title": "Pneumonia: diagnosis and management",
+      "organization": "NICE",
+      "year": "2025",
+      "url": "https://www.nice.org.uk/guidance/ng250"
+    }
+  ],
+  "knowledge_version": "1.1"
+}
