@@ -55,6 +55,18 @@ class FirestoreService:
         if self.db is None:
             logger.warning(f"Firestore disabled. Mock update_document {collection}/{doc_id}.")
             return
-            
+    def set_document(
+        self,
+        collection: str,
+        doc_id: str,
+        data: Dict[str, Any],
+    ) -> None:
+        if self.db is None:
+            logger.warning(
+                f"Firestore disabled. Mock set_document "
+                f"{collection}/{doc_id}."
+            )
+            return
+        
         doc_ref = self.db.collection(collection).document(doc_id)
         doc_ref.update(data)

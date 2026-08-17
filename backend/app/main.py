@@ -17,6 +17,7 @@ from backend.app.api.treatment import router as treatment_router
 from backend.app.api.workflow import router as workflow_router
 from backend.app.api.assessment import router as assessment_router
 from backend.app.api.auth import router as auth_router
+from backend.app.api.approval import router as approval_router
 from backend.app.auth import require_clinician
 
 
@@ -63,6 +64,11 @@ app.include_router(
 )
 app.include_router(
     workflow_router,
+    prefix="/api/v1/clinical",
+    dependencies=clinician_dependencies,
+)
+app.include_router(
+    approval_router,
     prefix="/api/v1/clinical",
     dependencies=clinician_dependencies,
 )
