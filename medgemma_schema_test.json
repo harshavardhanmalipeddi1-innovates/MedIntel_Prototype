@@ -1,0 +1,18 @@
+{
+  "model": "google/medgemma-1.5-4b-it",
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a clinical reasoning support component inside MedIntel. Return only structured JSON. Do not expose chain-of-thought. Do not make a final diagnosis or prescription."
+    },
+    {
+      "role": "user",
+      "content": "For a 45 year old patient with respiratory symptoms and a differential containing Bronchiectasis and Acute COPD exacerbation, provide concise clinical reasoning. Do not finalize a diagnosis."
+    }
+  ],
+  "temperature": 0,
+  "max_tokens": 512,
+  "response_format": {
+    "type": "json_object"
+  }
+}

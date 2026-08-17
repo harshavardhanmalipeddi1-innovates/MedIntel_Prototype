@@ -1,0 +1,14 @@
+{
+  "patient_context": {
+    "AGE": 45,
+    "SEX_MALE_CODE": 1.0,
+    "NONINITIAL_EVIDENCE_COUNT": 1,
+    "QUESTIONNAIRE_COMPLETION_FRACTION": 0.011904761904761904,
+    "INITIAL_EVIDENCE_ONLY": 0.0,
+    "CONSULTATION_STAGE_CODE": 1.0,
+    "evidence_tokens": [
+      "E_201",
+      "INITIAL::E_129"
+    ]
+  }
+}
