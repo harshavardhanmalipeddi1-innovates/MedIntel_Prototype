@@ -118,7 +118,6 @@ function decodePossiblyWrappedJson<T>(text: string): T {
   return value as T;
 }
 
-
 export type ClinicianIdentity = {
   username: string;
   role: "clinician";
@@ -139,6 +138,29 @@ export type ClinicianSession = {
 
 const CLINICIAN_SESSION_KEY = "medintel.clinician.session";
 const CLINICIAN_AUTH_EVENT = "medintel-auth-changed";
+
+/*
+ * API base URL
+ *
+ * Development:
+ *   VITE_API_BASE_URL=http://127.0.0.1:8000
+ *
+ * Production:
+ *   VITE_API_BASE_URL=https://YOUR-BACKEND-DOMAIN
+ *
+ * If the variable is empty, requests use the current origin.
+ */
+const API_BASE_URL = (
+  import.meta.env.VITE_API_BASE_URL || ""
+).replace(/\/+$/, "");
+
+function buildApiUrl(path: string): string {
+  if (!path.startsWith("/")) {
+    return `${API_BASE_URL}/${path}`;
+  }
+
+  return `${API_BASE_URL}${path}`;
+}
 
 function emitClinicianAuthChanged(): void {
   window.dispatchEvent(new Event(CLINICIAN_AUTH_EVENT));
@@ -205,7 +227,7 @@ export function subscribeClinicianSession(
 }
 
 async function requestJson<T>(
-  url: string,
+  path: string,
   init: RequestInit = {},
   timeoutMs = 30_000,
 ): Promise<T> {
@@ -227,6 +249,8 @@ async function requestJson<T>(
     );
   }
 
+  const url = buildApiUrl(path);
+
   try {
     const response = await fetch(url, {
       ...init,
@@ -238,14 +262,16 @@ async function requestJson<T>(
 
     if (
       response.status === 401 &&
-      url !== "/api/v1/auth/login"
+      path !== "/api/v1/auth/login"
     ) {
       clearClinicianSession();
     }
 
     if (!response.ok) {
       throw new Error(
-        `Request failed (${response.status}): ${body || response.statusText}`,
+        `Request failed (${response.status}): ${
+          body || response.statusText
+        }`,
       );
     }
 
@@ -346,8 +372,8 @@ export async function runClinicalWorkflow(
  * Retain the engineering-demo button, but route it through the same
  * AssessmentService contract used by the clinician-facing flow.
  *
- * The browser no longer constructs AGE / evidence_tokens / consultation
- * stage fields itself.
+ * The browser no longer constructs AGE / evidence_tokens /
+ * consultation stage fields itself.
  */
 export async function runVerifiedSyntheticWorkflow(): Promise<WorkflowResponse> {
   const questionnaire = await getAssessmentQuestionnaire();

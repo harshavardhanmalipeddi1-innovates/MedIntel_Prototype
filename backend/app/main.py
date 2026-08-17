@@ -9,6 +9,7 @@ sys.path.insert(
 )
 
 from fastapi import Depends, FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 
 from backend.app.api.prediction import router as prediction_router
 from backend.app.api.reasoning import router as reasoning_router
@@ -19,9 +20,19 @@ from backend.app.api.assessment import router as assessment_router
 from backend.app.api.auth import router as auth_router
 from backend.app.api.approval import router as approval_router
 from backend.app.auth import require_clinician
+from backend.app.config.settings import settings
 
 
 app = FastAPI(title="MedIntel API", version="1.0")
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=settings.CORS_ORIGINS,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get("/health")
@@ -47,31 +58,37 @@ app.include_router(
     prefix="/api/v1",
     dependencies=clinician_dependencies,
 )
+
 app.include_router(
     reasoning_router,
     prefix="/api/v1/clinical",
     dependencies=clinician_dependencies,
 )
+
 app.include_router(
     verification_router,
     prefix="/api/v1/clinical",
     dependencies=clinician_dependencies,
 )
+
 app.include_router(
     treatment_router,
     prefix="/api/v1/clinical",
     dependencies=clinician_dependencies,
 )
+
 app.include_router(
     workflow_router,
     prefix="/api/v1/clinical",
     dependencies=clinician_dependencies,
 )
+
 app.include_router(
     approval_router,
     prefix="/api/v1/clinical",
     dependencies=clinician_dependencies,
 )
+
 app.include_router(
     assessment_router,
     prefix="/api/v1/clinical",

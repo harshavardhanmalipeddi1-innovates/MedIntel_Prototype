@@ -51,7 +51,7 @@ class LocalMedGemmaProvider(ReasoningProvider):
                 },
             ],
             "temperature": 0.0,
-            "max_tokens": 1024,
+            "max_tokens": 384,
             "response_format": {
                 "type": "json_schema",
                 "json_schema": {
