@@ -6,6 +6,7 @@ from backend.app.schemas.workflow_schema import (
     ClinicalWorkflowRequest,
     ClinicalWorkflowResponse,
 )
+from backend.services.approval_service import ApprovalService
 from backend.services.clinical_rules import ClinicalRules
 from backend.services.differential_manager import DifferentialDiagnosisManager
 from backend.services.prediction_service import PredictionService
@@ -33,6 +34,7 @@ class WorkflowService:
         self.differential_manager = DifferentialDiagnosisManager()
         self.clinical_rules = ClinicalRules()
         self.reasoning_service = ReasoningService()
+        self.approval_service = ApprovalService()
         self.verification_service = VerificationService()
         self.treatment_service = TreatmentDraftService()
 
@@ -45,8 +47,13 @@ class WorkflowService:
         """
 
         from uuid import uuid4
+
         workflow_id = str(uuid4())
-        logger.info("MedIntel clinical workflow started workflow_id=%s", workflow_id)
+
+        logger.info(
+            "MedIntel clinical workflow started workflow_id=%s",
+            workflow_id,
+        )
 
         patient_context = request.patient_context
 
@@ -158,11 +165,24 @@ class WorkflowService:
         logger.info("Treatment safety draft generated")
 
         # ---------------------------------------------------------
-        # 9. Final Workflow Response
+        # 9. Persist Doctor Approval State
+        # ---------------------------------------------------------
+        self.approval_service.create_pending_approval(
+            workflow_id=workflow_id,
+        )
+
+        logger.info(
+            "Doctor approval record created workflow_id=%s",
+            workflow_id,
+        )
+
+        # ---------------------------------------------------------
+        # 10. Final Workflow Response
         # ---------------------------------------------------------
         logger.info("MedIntel clinical workflow completed")
 
         return ClinicalWorkflowResponse(
+            workflow_id=workflow_id,
             success=True,
             predictions=differential,
             reasoning=reasoning_response,

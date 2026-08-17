@@ -22,6 +22,56 @@ class ApprovalService:
     def __init__(self, firestore_service: FirestoreService | None = None):
         self.firestore = firestore_service or FirestoreService()
 
+    def create_pending_approval(
+        self,
+        workflow_id: str,
+    ) -> DoctorApprovalResponse:
+        """
+        Create the initial pending doctor-review record for a
+        completed clinical workflow.
+        """
+
+        existing = self.firestore.get_document(
+            self.COLLECTION,
+            workflow_id,
+        )
+
+        if existing is not None:
+            return DoctorApprovalResponse(
+                workflow_id=workflow_id,
+                requires_doctor_review=True,
+                approval_status=existing.get(
+                    "approval_status",
+                    "PENDING",
+                ),
+                reviewed_by=existing.get("reviewed_by"),
+                reviewed_at=existing.get("reviewed_at"),
+                review_comment=existing.get("review_comment"),
+            )
+
+        data = {
+            "workflow_id": workflow_id,
+            "requires_doctor_review": True,
+            "approval_status": "PENDING",
+            "reviewed_by": None,
+            "reviewed_at": None,
+            "review_comment": None,
+        }
+
+        self.firestore.add_document(
+            self.COLLECTION,
+            data,
+        )
+
+        return DoctorApprovalResponse(
+            workflow_id=workflow_id,
+            requires_doctor_review=True,
+            approval_status="PENDING",
+            reviewed_by=None,
+            reviewed_at=None,
+            review_comment=None,
+        )
+
     def get_approval(
         self,
         workflow_id: str,
